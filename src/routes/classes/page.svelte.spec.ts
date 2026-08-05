@@ -5,14 +5,14 @@ import * as classesApi from '$lib/features/classes/api/classes.api';
 import * as schoolsApi from '$lib/features/schools/api/schools.api';
 import Page from './+page.svelte';
 
-vi.mock('./classes.api', () => ({
+vi.mock('$lib/features/classes/api/classes.api', () => ({
 	listClasses: vi.fn(),
 	createClass: vi.fn(),
 	updateClass: vi.fn(),
 	deleteClass: vi.fn()
 }));
 
-vi.mock('../schools/schools.api', () => ({
+vi.mock('$lib/features/schools/api/schools.api', () => ({
 	listSchools: vi.fn()
 }));
 

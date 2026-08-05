@@ -4,7 +4,7 @@ import { render } from 'vitest-browser-svelte';
 import SchoolForm from './SchoolForm.svelte';
 import * as schoolsApi from '../api/schools.api';
 
-vi.mock('./schools.api', () => ({
+vi.mock('../api/schools.api', () => ({
 	createSchool: vi.fn(),
 	updateSchool: vi.fn()
 }));

@@ -5,7 +5,7 @@ import * as classesApi from '../api/classes.api';
 import type { ClassRecord } from '../types/classes.types';
 import ClassForm from './ClassForm.svelte';
 
-vi.mock('./classes.api', () => ({
+vi.mock('../api/classes.api', () => ({
 	createClass: vi.fn(),
 	updateClass: vi.fn()
 }));

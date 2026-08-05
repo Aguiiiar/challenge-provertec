@@ -6,14 +6,14 @@ import * as classesApi from '$lib/features/classes/api/classes.api';
 import Page from './+page.svelte';
 import type { ClassRecord } from '../../lib/features/classes/types/classes.types';
 
-vi.mock('./schools.api', () => ({
+vi.mock('$lib/features/schools/api/schools.api', () => ({
 	listSchools: vi.fn(),
 	createSchool: vi.fn(),
 	updateSchool: vi.fn(),
 	deleteSchool: vi.fn()
 }));
 
-vi.mock('../classes/classes.api', () => ({
+vi.mock('$lib/features/classes/api/classes.api', () => ({
 	listClasses: vi.fn()
 }));
 
