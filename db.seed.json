@@ -1,0 +1,132 @@
+{
+	"schools": [
+		{
+			"id": 1,
+			"name": "EMEF Monteiro Lobato",
+			"address": "Rua das Acácias, 120",
+			"city": "São Paulo",
+			"phone": "11987654321",
+			"email": "contato@monteirolobato.sp.gov.br",
+			"director": "Ana Souza"
+		},
+		{
+			"id": 2,
+			"name": "EMEF Cecília Meireles",
+			"address": "Av. dos Ipês, 540",
+			"city": "São Paulo",
+			"phone": "11912345678",
+			"email": "secretaria@ceciliameireles.sp.gov.br",
+			"director": "Carlos Lima"
+		},
+		{
+			"id": 3,
+			"name": "EMEF Anísio Teixeira",
+			"address": "Rua XV de Novembro, 89",
+			"city": "Campinas",
+			"phone": "19987654321",
+			"email": "contato@anisioteixeira.campinas.gov.br",
+			"director": "Mariana Castro"
+		},
+		{
+			"id": 4,
+			"name": "EMEI Vinícius de Moraes",
+			"address": "Praça da Matriz, 10",
+			"city": "Campinas",
+			"phone": "19912345678",
+			"email": "emei@viniciusdemoraes.campinas.gov.br",
+			"director": "Paulo Ramos"
+		},
+		{
+			"id": 5,
+			"name": "EMEF Paulo Freire",
+			"address": "Rua do Saber, 300",
+			"city": "Santos",
+			"phone": "13987654321",
+			"email": "escola@paulofreire.santos.gov.br",
+			"director": "Beatriz Nunes"
+		},
+		{
+			"id": 6,
+			"name": "EMEI Cora Coralina",
+			"address": "Av. Beira-Mar, 45",
+			"city": "Santos",
+			"phone": "13912345678",
+			"email": "emei@coracoralina.santos.gov.br",
+			"director": "João Pedro"
+		}
+	],
+	"classes": [
+		{
+			"id": 1,
+			"schoolId": 1,
+			"name": "1º Ano A",
+			"grade": "1º Ano",
+			"shift": "morning",
+			"teacher": "Fernanda Alves",
+			"capacity": 30
+		},
+		{
+			"id": 2,
+			"schoolId": 1,
+			"name": "2º Ano B",
+			"grade": "2º Ano",
+			"shift": "afternoon",
+			"teacher": "Roberto Dias",
+			"capacity": 28
+		},
+		{
+			"id": 3,
+			"schoolId": 1,
+			"name": "3º Ano A",
+			"grade": "3º Ano",
+			"shift": "morning",
+			"teacher": "Sônia Melo",
+			"capacity": 32
+		},
+		{
+			"id": 4,
+			"schoolId": 2,
+			"name": "4º Ano C",
+			"grade": "4º Ano",
+			"shift": "morning",
+			"teacher": "Ricardo Faria",
+			"capacity": 30
+		},
+		{
+			"id": 5,
+			"schoolId": 3,
+			"name": "1º Ano B",
+			"grade": "1º Ano",
+			"shift": "afternoon",
+			"teacher": "Carla Mendes",
+			"capacity": 27
+		},
+		{
+			"id": 6,
+			"schoolId": 4,
+			"name": "Pré II",
+			"grade": "Pré-Escola",
+			"shift": "morning",
+			"teacher": "Eduardo Tavares",
+			"capacity": 25
+		},
+		{
+			"id": 7,
+			"schoolId": 5,
+			"name": "5º Ano A",
+			"grade": "5º Ano",
+			"shift": "night",
+			"teacher": "Luciana Reis",
+			"capacity": 35
+		},
+		{
+			"id": 8,
+			"schoolId": 6,
+			"name": "Pré I",
+			"grade": "Pré-Escola",
+			"shift": "afternoon",
+			"teacher": "Marcos Vinícius",
+			"capacity": 22
+		}
+	]
+}
