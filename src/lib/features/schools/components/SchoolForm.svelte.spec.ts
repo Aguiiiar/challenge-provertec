@@ -2,6 +2,7 @@ import { page } from 'vitest/browser';
 import { describe, expect, it, vi } from 'vitest';
 import { render } from 'vitest-browser-svelte';
 import SchoolForm from './SchoolForm.svelte';
+import * as schoolsApi from '../api/schools.api';
 
 vi.mock('./schools.api', () => ({
 	createSchool: vi.fn(),

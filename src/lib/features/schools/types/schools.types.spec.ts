@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { validateSchool } from '../../lib/features/schools/types/schools.types';
+import { validateSchool } from './schools.types';
 
 const valid: Record<string, string> = {
 	name: 'EMEF Teste',
