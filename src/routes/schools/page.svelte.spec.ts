@@ -1,10 +1,10 @@
 import { page } from 'vitest/browser';
 import { describe, expect, it, vi } from 'vitest';
 import { render } from 'vitest-browser-svelte';
-import * as schoolsApi from './schools.api';
+import * as schoolsApi from '$lib/features/schools/api';
 import * as classesApi from '../classes/classes.api';
 import Page from './+page.svelte';
-import type { ClassRecord } from '../classes/classes.types';
+import type { ClassRecord } from '../../lib/features/classes/types/classes.types';
 
 vi.mock('./schools.api', () => ({
 	listSchools: vi.fn(),

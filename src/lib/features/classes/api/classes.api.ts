@@ -1,5 +1,5 @@
 import { request } from '$lib/api/client';
-import type { ClassInput, ClassRecord } from './classes.types';
+import type { ClassInput, ClassRecord } from '../types/classes.types';
 
 export function listClasses(): Promise<ClassRecord[]> {
 	return request<ClassRecord[]>('/classes');

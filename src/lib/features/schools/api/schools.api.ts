@@ -1,5 +1,5 @@
 import { request } from '$lib/api/client';
-import type { School, SchoolInput } from './schools.types';
+import type { School, SchoolInput } from '../types/schools.types';
 
 export function listSchools(): Promise<School[]> {
 	return request<School[]>('/schools');

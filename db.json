@@ -62,15 +62,6 @@
 			"email": "teste@e2e.gov.br",
 			"director": "Diretor Teste",
 			"id": 7
-		},
-		{
-			"name": "EMEF Editada E2E",
-			"address": "",
-			"city": "",
-			"phone": "11977776666",
-			"email": "editar@e2e.gov.br",
-			"director": "",
-			"id": 8
 		}
 	],
 	"classes": [

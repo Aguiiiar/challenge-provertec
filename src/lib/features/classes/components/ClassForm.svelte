@@ -2,10 +2,10 @@
 	import * as Button from '$lib/components/ui/button/index.js';
 	import * as Input from '$lib/components/ui/input/index.js';
 	import * as Dialog from '$lib/components/ui/dialog/index.js';
-	import type { School } from '../schools/schools.types';
-	import { createClass, updateClass } from './classes.api';
-	import { SHIFTS, shiftLabel, validateClass } from './classes.types';
-	import type { ClassErrors, ClassInput, ClassRecord } from './classes.types';
+	import type { School } from '../../schools/types/schools.types';
+	import { createClass, updateClass } from '../api/classes.api';
+	import { SHIFTS, shiftLabel, validateClass } from '../types/classes.types';
+	import type { ClassErrors, ClassInput, ClassRecord } from '../types/classes.types';
 
 	interface Props {
 		open: boolean;

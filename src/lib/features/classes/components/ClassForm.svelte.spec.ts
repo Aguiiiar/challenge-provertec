@@ -1,9 +1,9 @@
 import { page } from 'vitest/browser';
 import { describe, expect, it, vi } from 'vitest';
 import { render } from 'vitest-browser-svelte';
-import * as classesApi from './classes.api';
+import * as classesApi from '../api/classes.api';
+import type { ClassRecord } from '../types/classes.types';
 import ClassForm from './ClassForm.svelte';
-import type { ClassRecord } from './classes.types';
 
 vi.mock('./classes.api', () => ({
 	createClass: vi.fn(),

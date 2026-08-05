@@ -2,9 +2,9 @@
 	import * as Button from '$lib/components/ui/button/index.js';
 	import * as Input from '$lib/components/ui/input/index.js';
 	import * as Dialog from '$lib/components/ui/dialog/index.js';
-	import { createSchool, updateSchool } from './schools.api';
-	import { validateSchool } from './schools.types';
-	import type { School, SchoolErrors, SchoolInput } from './schools.types';
+	import { createSchool, updateSchool } from '../api/schools.api';
+	import { validateSchool } from '../types/schools.types';
+	import type { School, SchoolErrors, SchoolInput } from '../types/schools.types';
 
 	interface Props {
 		open: boolean;

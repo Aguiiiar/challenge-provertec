@@ -6,12 +6,12 @@
 	import * as Input from '$lib/components/ui/input/index.js';
 	import * as Skeleton from '$lib/components/ui/skeleton/index.js';
 	import * as Table from '$lib/components/ui/table/index.js';
-	import { listClasses } from '../classes/classes.api';
-	import type { ClassRecord } from '../classes/classes.types';
-	import { deleteSchool, listSchools } from './schools.api';
-	import type { School } from './schools.types';
+	import { listClasses } from '../../lib/features/classes/api/classes.api';
+	import type { ClassRecord } from '../../lib/features/classes/types/classes.types';
+	import { deleteSchool, listSchools } from '../../lib/features/schools/api/schools.api';
+	import type { School } from '../../lib/features/schools/types/schools.types';
 	import { formatPhoneBR } from '$lib/format';
-	import SchoolForm from './SchoolForm.svelte';
+	import SchoolForm from '../../lib/features/schools/components/SchoolForm.svelte';
 
 	let schools = $state<School[]>([]);
 	let classes = $state<ClassRecord[]>([]);
