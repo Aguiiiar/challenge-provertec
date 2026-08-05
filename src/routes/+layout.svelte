@@ -17,12 +17,10 @@
 			<div class="flex h-14 items-center gap-4 px-4 md:px-6">
 				<div class="flex-1">
 					<h1 class="text-lg font-semibold">
-						{#if page.url.pathname === '/'}
-							Dashboard
-						{:else if page.url.pathname.startsWith('/schools')}
+						{#if page.url.pathname.startsWith('/schools')}
 							Gestão de Escolas
 						{:else}
-							Gestão Escolar
+							Gestão de Turmas
 						{/if}
 					</h1>
 				</div>
