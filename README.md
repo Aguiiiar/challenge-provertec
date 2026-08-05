@@ -5,7 +5,7 @@ Aplicação web em SvelteKit para gerenciamento de escolas públicas municipais 
 ## Requisitos
 
 - Node.js 20+ (testado com Node 24)
-- Yarn 1.x
+- npm (incluso no Node.js)
 
 ## Stack
 
@@ -14,7 +14,7 @@ SvelteKit 2 · Svelte 5 (runes) · TypeScript · zod · Tailwind CSS 4 · shadcn
 ## Instalação
 
 ```sh
-yarn install
+npm install
 ```
 
 ## Execução
@@ -22,7 +22,7 @@ yarn install
 ### 1. Subir a API simulada (Json Server)
 
 ```sh
-yarn api
+npm run api
 # Json Server em http://localhost:3001
 ```
 
@@ -31,24 +31,24 @@ Endpoints: `GET/POST/PUT/DELETE /schools` e `GET/POST/PUT/DELETE /classes`. Os d
 ### 2. Subir a aplicação
 
 ```sh
-yarn dev
+npm run dev
 # http://localhost:5173
 ```
 
-A aplicação aponta para `http://localhost:3001` por padrão. Para usar outra URL: `VITE_API_BASE_URL=http://localhost:3001 yarn dev`.
+A aplicação aponta para `http://localhost:3001` por padrão. Para usar outra URL: `VITE_API_BASE_URL=http://localhost:3001 npm run dev`.
 
 ## Testes
 
 ### Unitários e de componentes (Vitest)
 
 ```sh
-yarn test:unit -- --run
+npm run test:unit -- --run
 ```
 
 ### End-to-end (Playwright)
 
 ```sh
-yarn test:e2e
+npm run test:e2e
 # Instala o Chromium, sobe a API e a aplicação (build + preview), e executa os cenários
 ```
 
@@ -57,9 +57,9 @@ Os testes E2E reiniciam `db.json` a partir de `db.seed.json` a cada execução e
 ### Verificação de qualidade
 
 ```sh
-yarn run check   # svelte-check (tipagem)
-yarn lint    # Prettier + ESLint
-yarn format  # formata o código
+npm run check   # svelte-check (tipagem)
+npm run lint    # Prettier + ESLint
+npm run format  # formata o código
 ```
 
 ## Estrutura
