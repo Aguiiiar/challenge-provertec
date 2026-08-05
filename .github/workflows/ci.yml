@@ -13,10 +13,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: yarn
-      - run: yarn install --frozen-lockfile
-      - run: yarn lint
-      - run: yarn run check
-      - run: yarn test:unit -- --run
+          cache: npm
+      - run: npm ci
+      # Browser tests (vitest-browser e2e) need the Playwright browsers;
+      # install them BEFORE the unit tests run on a fresh runner.
       - run: npx playwright install --with-deps chromium
-      - run: yarn test:e2e
+      - run: npm run lint
+      - run: npm run check
+      - run: npm run test:unit -- --run
+      - run: npm run test:e2e
